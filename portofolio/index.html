@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portofolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <style>
+   #links_div{
+     margin: auto;
+     width: 40%;
+     transform: translate(300px,10px);
+}
+
+@media (max-width: 400px) {
+   #links_div{
+     margin: auto;
+     width: 40%;
+     transform: translate(50px,23px);
+}
+}
+
+
+#card_with_projects {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Σχεδίαση κάθε κάρτας */
+.project_card {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project_card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.project_card p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project_card a {
+  text-decoration: none;
+  color: white;
+  background-color: #007bff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+/* Mobile: scroll μία-μία κάρτα */
+@media (max-width: 768px) {
+  #card_with_projects {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .project_card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+}
+
+    </style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="aboutme.html">About me</a>
+  <a href="conctact.html">Contact</a>
+  <a href="myprojects.html">My Projects</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+    <h1 style="text-align: center; font-size: 60px;">My portfolio</h1><br><br>
+    <h3 style="text-align: center;"><p>Hi! I'm Alexandros Hondo from Kerkyra. I'm currently studying IT at SAEK Kerkyras and learning how to build websites and applications. Welcome to my portfolio!<a href="aboutme.html"><small> For more infomation click here</small></a></p></h3>
+    <br><br>
+    <h1 style="text-align: center;">Some of My projects</h1>
+    <br><br>
+    <div id="card_with_projects">
+  <div class="project_card">
+    <h2>Portfolio Website</h2>
+    <p>Η πρώτη μου προσωπική ιστοσελίδα portfolio, φτιαγμένη με HTML & CSS.</p>
+    <a href="#">Live Demo</a>
+  </div>
+
+  <div class="project_card">
+    <h2>To-Do List App</h2>
+    <p>Μια απλή εφαρμογή διαχείρισης εργασιών με JavaScript.</p>
+    <a href="#">Δες το Project</a>
+  </div>
+
+  <div class="project_card">
+    <h2>Recipe Page</h2>
+    <p>Μια σελίδα με αγαπημένες μου συνταγές. Στατικό site, responsive layout.</p>
+    <a href="#">Δοκίμασέ το</a>
+  </div>
+</div>
+
+<div id="links_div">
+    <a href="" style="text-decoration: none;"><i class="fa fa-instagram" style="font-size:48px;"></i></a>
+    <a href="" style="text-decoration: none;"><i class="fa fa-youtube" style="font-size:48px;"></i></a>
+</div>
+</body>
+</html>
