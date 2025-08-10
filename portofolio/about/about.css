@@ -1,0 +1,50 @@
+body{
+    background-color: grey;
+}
+
+ul{
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
+}
+
+
+@media screen and (min-width: 0px) {
+   h1,h2{
+  text-align: center;
+}
+
+img{
+    width:250px;
+    height:250px;
+    display: block;
+    margin: auto;
+    background-color: white;
+}
+}
+
+@media screen and (min-width: 600px) {
+h1,h2{
+  text-align: center;
+}
+
+img{
+    width:400px;
+    height:400px;
+    display: block;
+}
+
+#aboutmediv{
+     margin: auto;
+     width:920px;
+}
+
+#subaboutmediv{
+    display: flex;
+    width:910px;
+    height:410px;  
+}
+}
+
